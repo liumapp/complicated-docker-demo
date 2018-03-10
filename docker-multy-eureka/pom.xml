@@ -25,7 +25,8 @@
     </developer>
   </developers>
 
-  <modules>
-    
+<modules>
+    <module>server-a</module>
+    <module>server-b</module>
   </modules>
 </project>
