@@ -3,7 +3,12 @@ A complicated docker demo with Spring Boot Project .
 
 ## how to use
 
-* make multy Eureka Server
+### make multy Eureka Server
+
+* first of all let's build a 2 hosts eureka server , so , you need to config your hosts file first : 
+
+    ![hosts_mac.jpg](https://github.com/liumapp/complicated-docker-demo/blob/master/pic/hosts_mac.jpg)
+
 
 
 
