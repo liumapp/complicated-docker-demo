@@ -9,6 +9,9 @@ A complicated docker demo with Spring Boot Project .
 
     ![hosts_mac.jpg](https://github.com/liumapp/complicated-docker-demo/blob/master/pic/hosts_mac.jpg)
 
+    you can name your local host as your wish . (in Mac , the hosts file path is /etc/hosts) 
+    
+
 
 
 
