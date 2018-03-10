@@ -28,5 +28,6 @@
   <modules>
     <module>server-a</module>
     <module>server-b</module>
+    <module>server-profile</module>
   </modules>
 </project>
