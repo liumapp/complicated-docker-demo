@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: @project.artifactId@
+
+server:
+  port: 2333
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://discovery:1234/eureka/
+zuul:
+  routes:
+    docker-weba:
+      serviceId: docker-weba
+      path: /**
+    docker-webb:
+      serviceId: docker-webb
+      path: /**
+
+
