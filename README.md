@@ -13,6 +13,8 @@ A complicated docker demo with Spring Boot Project .
      
     for me , i named it as peer1 & peer2
      
+* start docker-multy-eureka . 
+     
      
     
 
