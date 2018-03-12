@@ -14,6 +14,12 @@ A complicated docker demo with Spring Boot Project .
     for me , i named it as peer1 & peer2
      
 * start docker-multy-eureka . 
+
+     there are three modules in docker-multy-eureka . 
+     
+     server-a & server-b is build by docker-maven-plugin
+     
+     server-profile is build by example , for more details , plz read readme in server-profile 
      
      
     
