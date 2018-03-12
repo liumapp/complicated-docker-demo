@@ -1,18 +1,26 @@
 spring:
-  devtools:
-    restart:
-      exclude:  public/**
-      enabled:  true
-  thymeleaf:
-    suffix: .html
-    mode: HTML5
-    encoding: UTF-8
-    content-type: text/html; charset=utf-8
-    cache: false
-
-mybatis:
-  configuration:
-    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
-  mapper-locations: classpath*:mappers/*Mapper.xml
+  application:
+    name: server-profile
+---
+spring:
+  profiles: peer1
 server:
-  port: 8081
+  port: 12345
+eureka:
+  instance:
+    hostname: peer1
+  client:
+    service-url:
+      defaultZone: http://peer2:12346/eureka/
+---
+spring:
+  profiles: peer2
+server:
+  port: 12346
+eureka:
+  instance:
+    hostname: peer2
+  client:
+    service-url:
+      defaultZone: http://peer1:12345/eureka/
+
