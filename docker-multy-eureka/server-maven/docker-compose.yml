@@ -1,20 +1,4 @@
 version: '2'
 services:
-  multy-eureka-maven-a:
-    hostname: peer1
+  peer1:
     image: liumapp/server-maven:v1.0.0
-    links:
-      - multy-eureka-maven-b
-    ports:
-      - "12345:12345"
-    environment:
-      - spring.profiles.active=peer1
-  multy-eureka-maven-b:
-    hostname: peer2
-    image: liumapp/server-maven:v1.0.0
-    links:
-      - multy-eureka-maven-a
-    ports:
-      - "12346:12346"
-    environment:
-      - spring.profiles.active=peer2
