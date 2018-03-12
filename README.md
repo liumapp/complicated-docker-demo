@@ -15,11 +15,11 @@ A complicated docker demo with Spring Boot Project .
      
 * start docker-multy-eureka . 
 
-     there are three modules in docker-multy-eureka . 
+     there are two modules in docker-multy-eureka . 
      
-     server-a & server-b is build by docker-maven-plugin
+     server-maven is build by docker-maven-plugin
      
-     server-profile is build by example , for more details , plz read readme in server-profile 
+     server-profile is build by simple orders , for more details , plz read readme in server-profile 
      
      
     
