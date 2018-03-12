@@ -29,5 +29,6 @@
     <module>server-a</module>
     <module>server-b</module>
     <module>server-profile</module>
+    <module>server-maven</module>
   </modules>
 </project>
