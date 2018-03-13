@@ -1,26 +1,26 @@
 version: '2'
 
 services:
-  peer1:
-    image: liumapp/server-maven:v1.0.0
-    ports:
-      - "12345:12345"
-    environment:
-      - spring.profiles.active=peer1
-  peer2:
-    image: liumapp/server-maven:v1.0.0
-    hostname: peer2
-    ports:
-      - "12346:12346"
-    environment:
-      - spring.profiles.active=peer2
-  config:
-    image: liumapp/docker-config:v1.0.0
-  gateway:
-    image: liumapp/docker-gateway:v1.0.0
-    ports:
-      - "2333:2333"
   weba:
     image: liumapp/docker-weba:v1.0.0
   webb:
     image: liumapp/docker-webb:v1.0.0
+  gateway:
+      image: liumapp/docker-gateway:v1.0.0
+      ports:
+        - "2333:2333"
+  config:
+      image: liumapp/docker-config:v1.0.0
+  peer2:
+      image: liumapp/server-maven:v1.0.0
+      hostname: peer2
+      ports:
+        - "12346:12346"
+      environment:
+        - spring.profiles.active=peer2
+  peer1:
+      image: liumapp/server-maven:v1.0.0
+      ports:
+        - "12345:12345"
+      environment:
+        - spring.profiles.active=peer1

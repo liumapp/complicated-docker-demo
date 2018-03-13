@@ -27,7 +27,7 @@ A complicated docker demo with Spring Boot Project .
       
 * we will use server-maven of docker-multy-eureka as eureka server .
       
-*       
+* run install-docker.sh to build docker image .      
      
      
     
