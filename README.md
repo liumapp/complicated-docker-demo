@@ -17,9 +17,17 @@ A complicated docker demo with Spring Boot Project .
 
      there are two modules in docker-multy-eureka . 
      
-     server-maven is build by docker-maven-plugin
+     server-maven is build by docker-maven-plugin . 
      
-     server-profile is build by simple orders , for more details , plz read readme in server-profile 
+     server-profile is build by simple orders .
+      
+     for more details , plz read readme in server-profile
+      
+### make multy Spring Cloud MicroServices . 
+      
+* we will use server-maven of docker-multy-eureka as eureka server .
+      
+*       
      
      
     

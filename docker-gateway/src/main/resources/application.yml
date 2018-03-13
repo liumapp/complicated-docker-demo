@@ -8,7 +8,7 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://discovery:1234/eureka/
+      defaultZone: http://peer1:12345/eureka/,http://peer2:12346/eureka/
 zuul:
   routes:
     docker-weba:
