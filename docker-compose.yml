@@ -3,16 +3,29 @@ version: '2'
 services:
   weba:
     image: liumapp/docker-weba:v1.0.0
+    restart: always
+    depends_on:
+      - peer1
+      - peer2
+      - config
   webb:
     image: liumapp/docker-webb:v1.0.0
+    restart: always
+    depends_on:
+      - peer1
+      - peer2
+      - config
   gateway:
       image: liumapp/docker-gateway:v1.0.0
+      restart: always
       ports:
         - "2333:2333"
   config:
       image: liumapp/docker-config:v1.0.0
+      restart: always
   peer2:
       image: liumapp/server-maven:v1.0.0
+      restart: always
       hostname: peer2
       ports:
         - "12346:12346"
@@ -20,6 +33,7 @@ services:
         - spring.profiles.active=peer2
   peer1:
       image: liumapp/server-maven:v1.0.0
+      restart: always
       ports:
         - "12345:12345"
       environment:
