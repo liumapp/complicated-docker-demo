@@ -34,6 +34,8 @@ A complicated docker demo with Spring Boot Project .
 * use commonds below to make 3 module instance : 
       
       docker-compose scale weba=3 webb=3 config=3 
+      
+    but this still remain problem to be solve .       
      
      
     
