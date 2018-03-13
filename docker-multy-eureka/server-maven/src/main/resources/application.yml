@@ -1,6 +1,6 @@
 spring:
   application:
-    name: server-profile
+    name: server-maven
 ---
 spring:
   profiles: peer1

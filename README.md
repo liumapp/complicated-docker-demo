@@ -27,7 +27,13 @@ A complicated docker demo with Spring Boot Project .
       
 * we will use server-maven of docker-multy-eureka as eureka server .
       
-* run install-docker.sh to build docker image .      
+* run install-docker.sh to build docker image .
+      
+* run "docker-compose up -d" to start 6 module .
+
+* use commonds below to make 3 module instance : 
+      
+      docker-compose scale weba=3 webb=3 config=3 
      
      
     
