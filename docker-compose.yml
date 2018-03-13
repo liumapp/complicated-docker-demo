@@ -7,6 +7,8 @@ services:
     image: liumapp/docker-webb:v1.0.0
   gateway:
       image: liumapp/docker-gateway:v1.0.0
+      ports:
+        - "2333:2333"
   config:
       image: liumapp/docker-config:v1.0.0
   peer2:
