@@ -18,9 +18,11 @@ mvn clean package docker:build
 
 cd ..
 
-cd docker-eureka
+cd docker-multy-eureka/server-maven
 
 mvn clean package docker:build
+
+cd ..
 
 cd ..
 
